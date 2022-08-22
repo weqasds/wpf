@@ -17,5 +17,4 @@ jobs:
     - name: Build
       run: .\build.cmd -pack -ci -configuration Release -prepareMachine /p:Platform=x86
     - name: Push
-      run: nuget push .\artifacts\packages\Release\NonShipping\*.nupkg -Source 
-https://www.myget.org/feed/Packages/tqnof -ApiKey c50b81d3-78fa-4d2b-9b51-18309f2dbde4 
+      run: nuget push .\artifacts\packages\Release\NonShipping\*.nupkg -Source https://www.myget.org/feed/Packages/tqnof -ApiKey c50b81d3-78fa-4d2b-9b51-18309f2dbde4 
